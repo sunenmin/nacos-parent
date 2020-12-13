@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: nacos-provide
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+        register-enabled: true
+        namespace: 1c5eebc5-dead-42d1-a67a-cb70566736e7
+      config:
+        server-addr: localhost:8848
+        file-extension: yaml
+        prefix: application
+        names pace: 1c5eebc5-dead-42d1-a67a-cb70566736e7
+
+server:
+  port: 8010
+
+member:
+  name: sunenmin
+  age: 25
